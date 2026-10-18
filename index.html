@@ -10,7 +10,9 @@
       * {
         box-sizing: border-box;
       }
-
+      html {
+        scroll-behavior: smooth;
+      } 
       body {
         margin: 0;
         font-family: Arial, sans-serif;
@@ -85,6 +87,46 @@
         outline-offset: 5px;
       }
 
+      
+      .top-nav {
+        position: sticky;
+        top: 0;
+        background-color: #f8f9fa;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 1000;
+      }
+      
+      .top-nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 15px 0;
+      }
+      
+      .top-nav li {
+        margin: 0 20px;
+      }
+      
+      .top-nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+      
+      /* Page Sections */
+      section {
+        padding: 100px 20px;
+        height: 80vh; /* Gives the page depth to demonstrate scrolling */
+      }
+      
+      /* Offset to prevent the sticky nav from covering section headers */
+      section {
+        scroll-margin-top: 60px; 
+      }
+
+
+      
       .codeReview {
         margin-top: 45px;
       }
