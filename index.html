@@ -161,6 +161,51 @@
           padding: 35px 25px;
         }
       }
+
+      /* Makes navigation scroll smoothly */
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 110px;
+      }
+      
+      /* Keeps the navigation visible while scrolling */
+      .topNav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 28px;
+        padding: 16px 20px;
+      
+        background-color: #24272B;
+        border-bottom: 1px solid #BEF264;
+      }
+      
+      .topNav a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      
+      .topNav a:hover {
+        color: #BEF264;
+      }
+      
+      .topNav a:focus-visible {
+        outline: 2px solid #BEF264;
+        outline-offset: 5px;
+      }
+      
+      /* Respects visitors who prefer reduced motion */
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
     </style>
   </head>
 
@@ -186,6 +231,11 @@
       </div>
     </header>
     
+    <nav class="topNav" aria-label="Main navigation">
+      <a href="#codeReview">Code Review</a>
+      <a href="#originalArtifact">Original Application</a>
+    </nav>
+    
     <main>
       <h2>Welcome to My ePortfolio</h2>
       <p>
@@ -197,7 +247,7 @@
         enhancements, and reflections as I prepare for a career in technology.
       </p>
       
-      <section class="codeReview">
+      <section class="codeReview" id="codeReview">
         <h2>Code Review</h2>
       
         <p>
@@ -218,7 +268,7 @@
         </a>
       </section>
 
-      <section class="originalArtifact">
+      <section class="originalArtifact" id="originalArtifact">
         <h2>
           Original Artifact
         </h2>
