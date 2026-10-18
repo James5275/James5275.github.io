@@ -6,40 +6,43 @@
     <title>James Ehrle ePortfolio</title>
 
     <style>
+      /* Includes padding and borders in element sizes */
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         margin: 0;
         font-family: Arial, sans-serif;
+        background-color: #F4F5F3;
+        color: #24272B;
+        line-height: 1.6;
       }
-      
+
+      /* Solid graphite banner */
       .banner {
-        position: relative;
-        overflow: hidden;
-        box-sizing: border-box;
         min-height: 420px;
         padding: 80px 8%;
-      
         display: flex;
         align-items: center;
-      
-        background-color: #101c2e
-        border-bottom: 5px solid #8aa6a4;
+
+        background-color: #24272B;
+        color: #FFFFFF;
+        border-bottom: 5px solid #BEF264;
       }
-      
-      /* Keeps the text above the decorative code symbol */
+
       .bannerText {
-        position: relative;
-        z-index: 1;
-        max-width: 750px;
+        max-width: 800px;
       }
-      
-      .banner .bannerLabel {
+
+      .bannerLabel {
         margin: 0 0 20px;
-        color: #5a7874;
+        color: #BEF264;
         font-size: 14px;
         font-weight: bold;
         letter-spacing: 3px;
       }
-      
+
       .banner h1 {
         margin: 0;
         font-size: clamp(42px, 6vw, 76px);
@@ -47,64 +50,77 @@
         line-height: 1.1;
         letter-spacing: -2px;
       }
-      
+
+      /* Lime period beside your name */
       .accent {
-        color: #2dd4bf;
+        color: #BEF264;
       }
-      
-      .banner .bannerSubtitle {
+
+      .bannerSubtitle {
         margin: 24px 0 32px;
-        color: #c5d1df;
+        color: #D1D5DB;
         font-size: 20px;
-        line-height: 1.6;
       }
-      
+
+      /* Link styled as a button */
       .githubButton {
         display: inline-block;
         padding: 14px 24px;
-        border: 2px solid #2dd4bf;
+        border: 2px solid #BEF264;
         border-radius: 8px;
-      
-        color: #2dd4bf;
+
+        color: #BEF264;
         text-decoration: none;
         font-size: 16px;
         font-weight: bold;
       }
-      
+
       .githubButton:hover {
-        background-color: #2dd4bf;
-        color: #101c2e;
+        background-color: #BEF264;
+        color: #24272B;
       }
-      
+
       .githubButton:focus-visible {
-        outline: 3px solid white;
+        outline: 3px solid #FFFFFF;
         outline-offset: 5px;
       }
-      
+
+      /* Content beneath the banner */
+      main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 50px 8%;
+      }
+
+      main h2 {
+        margin: 0 0 16px;
+        font-size: 30px;
+      }
+
+      main p {
+        margin: 0;
+        font-size: 18px;
+      }
+
+      /* Adjusts spacing for smaller screens */
       @media (max-width: 600px) {
         .banner {
           min-height: 360px;
           padding: 55px 25px;
         }
-      
-        .banner .bannerLabel {
+
+        .bannerLabel {
           font-size: 12px;
           letter-spacing: 2px;
         }
-      
-        .banner .bannerSubtitle {
+
+        .bannerSubtitle {
           font-size: 18px;
         }
-      
-        .codeAccent {
-          font-size: 150px;
-          right: -20px;
+
+        main {
+          padding: 35px 25px;
         }
-      }
-      
-      /* Adds space around the main page content */
-      main {
-        padding: 20px;
       }
     </style>
   </head>
@@ -112,21 +128,33 @@
   <body>
     <header class="banner">
       <div class="bannerText">
-        <p class="bannerLabel">CS499 • COMPUTER SCIENCE CAPSTONE</p>
+        <p class="bannerLabel">
+          CS499 • COMPUTER SCIENCE CAPSTONE
+        </p>
+
         <h1>James Ehrle<span class="accent">.</span></h1>
+
         <p class="bannerSubtitle">
           Solving problems. Building skills. Creating solutions.
         </p>
-    
-        <a class="githubButton" href="https://github.com/James5275">
+
+        <a
+          class="githubButton"
+          href="https://github.com/James5275"
+        >
           Explore My GitHub &rarr;
         </a>
       </div>
     </header>
 
     <main>
-      <h2>Welcome to My Portfolio</h2>
-      <p>This is my portfolio.</p>
+      <h2>Welcome to My ePortfolio</h2>
+      <p>
+        This portfolio showcases my work in CS499 and my growth
+        throughout the Computer Science program. Explore my projects,
+        enhancements, and reflections as I prepare for a career
+        in technology.
+      </p>
     </main>
   </body>
 </html>
