@@ -6,7 +6,6 @@
     <title>James Ehrle ePortfolio</title>
 
     <style>
-      /* Includes padding and borders in element sizes */
       * {
         box-sizing: border-box;
       }
@@ -14,12 +13,12 @@
       body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background-color: #aeb5ae;
+        background-color: #F0F0F0;
         color: #24272B;
         line-height: 1.6;
       }
 
-      /* Solid graphite banner */
+      /* Banner color and style */
       .banner {
         min-height: 420px;
         padding: 80px 8%;
@@ -27,7 +26,7 @@
         align-items: center;
 
         background-color: #24272B;
-        color: #FFFFFF;
+        color: #F0F0F0;
         border-bottom: 5px solid #BEF264;
       }
 
@@ -61,8 +60,31 @@
         color: #D1D5DB;
         font-size: 20px;
       }
+      /* Top Margin of each section */
+      .codeReview {
+        margin-top: 45px;
+      }
 
-      /* Link styled as a button */
+      .originalArtifact {
+        margin-top: 45px;
+      }
+
+      .enhancementOne {
+        margin-top: 45px;
+      }
+      
+      .enhancementTwo {
+        margin-top: 45px;
+      }
+
+      .enhancementThree {
+        margin-top: 45px;
+      }
+      
+
+      /* BUTTONS */
+
+      /* GIT Button */
       .githubButton {
         display: inline-block;
         padding: 14px 24px;
@@ -84,26 +106,9 @@
         outline: 3px solid #FFFFFF;
         outline-offset: 5px;
       }
-      .codeReview {
-        margin-top: 45px;
-      }
 
-      .originalArtifact {
-        margin-top: 45px;
-      }
 
-      .enhancementOne {
-        margin-top: 45px;
-      }
-      
-      .enhancementTwo {
-        margin-top: 45px;
-      }
-
-      .enhancementThree {
-        margin-top: 45px;
-      }
-      
+      /* Body Button */
       .bodyButton {
         display: inline-block;
         margin-top: 20px;
@@ -124,7 +129,8 @@
         outline: 3px solid #24272B;
         outline-offset: 5px;
       }
-      /* Content beneath the banner */
+      
+      /* Main Content Sytle*/
       main {
         max-width: 1100px;
         margin: 0 auto;
@@ -162,13 +168,13 @@
         }
       }
 
-      /* Makes navigation scroll smoothly */
+      /* Making Scrolling smooth */
       html {
         scroll-behavior: smooth;
         scroll-padding-top: 110px;
       }
       
-      /* Keeps the navigation visible while scrolling */
+      /* Pins the navigation to the top of the screen */
       .topNav {
         position: sticky;
         top: 0;
@@ -199,22 +205,14 @@
         outline: 2px solid #BEF264;
         outline-offset: 5px;
       }
-      
-      /* Respects visitors who prefer reduced motion */
-      @media (prefers-reduced-motion: reduce) {
-        html {
-          scroll-behavior: auto;
-        }
-      }
     </style>
   </head>
 
   <body> 
-        
     <nav class="topNav" aria-label="Main navigation">
       <a href="#home">Home</a>
       <a href="#codeReview">Code Review</a>
-      <a href="#originalArtifact">Original Application</a>
+      <a href="#originalArtifact">Original Artifact</a>
       <a href="#enhancementOne">Enhancement One</a>
       <a href="#enhancementTwo">Enhancement Two</a>
       <a href="#enhancementThree">Enhancement Three</a>
@@ -223,7 +221,7 @@
     <header class="banner" id = "home">
       <div class="bannerText">
         <p class="bannerLabel">
-          CS499 • COMPUTER SCIENCE CAPSTONE
+          CS499 | COMPUTER SCIENCE CAPSTONE
         </p>
 
         <h1>James Ehrle<span class="accent">.</span></h1>
@@ -236,7 +234,7 @@
           class="githubButton"
           href="https://github.com/James5275"
         >
-          Explore My GitHub &rarr;
+          Find More at my Github &rarr;
         </a>
       </div>
     </header>
@@ -251,6 +249,13 @@
         of software design, data structure, and database. Explore my projects, 
         enhancements, and reflections as I prepare for a career in technology.
       </p>
+
+      <section class="selfAssessment" margin-top: 45px>
+        <h2>Self-Assessment</h2>
+        <p>
+          ;lksjfd
+        </p>
+      </section>
       
       <section class="codeReview" id="codeReview">
         <h2>Code Review</h2>
@@ -267,8 +272,7 @@
           class="bodyButton"
           href="https://youtu.be/wuon8zyAHzs"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           Watch My Code Review &rarr;
         </a>
       </section>
@@ -291,8 +295,7 @@
           class="bodyButton"
           href="https://github.com/James5275/IT145_originalArtifact.git"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           View Original Artifact &rarr;
         </a>
       </section>
